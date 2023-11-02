@@ -17,8 +17,7 @@ header{
     font-variant: small-caps;
     text-align: center; 
     display: flex;
-    justify-content: space-evenly;
-    align-content: end;
+    justify-content: space-between;
     height: 40px;
 }
 h1{ 
@@ -29,7 +28,7 @@ h1{
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 10px;  
+    padding: 10px; 
 }
 
 nav a{
@@ -46,6 +45,7 @@ nav a:hover{
 main{
     background-color: #000000;
     position: relative;
+    background-size: cover;
 }
 /* Fin Main */
 
@@ -56,16 +56,46 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 /* Fin Home */
+
 /* Tienda */
-.producto{
+.tienda{
     background-color: #000000;
-    font-family: 'Rubik', sans-serif;
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.producto{
+    height: 350px;
+}
+.producto-img{
+    height: 300px;
+    width: 200px; 
+    background-image: url(img/womendress.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.producto-title{
+    color: #6d1d69;
     font-size: 20px;
+    font-family: 'Onest', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 2px;
+}
+.producto-precio{
     color: #ffffff;
-    text-transform: uppercase;
-    display:inline-block;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    text-align: center;
 }
 /* Fin Tienda */
 /* Footer */
@@ -78,9 +108,13 @@ footer{
     text-align: right;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 5px;
 }
 
+#info ul{
+    justify-content: start;
+}
 #info ul li{
     color: #000000;
     display: flex;
