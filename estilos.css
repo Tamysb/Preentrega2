@@ -57,10 +57,10 @@ nav a:active{
 /* Fin Main */
 
 /* Home Carrusel*/
+/* Desktop estilos 992px*/
 .container-fluid{
     background-color: #000000;
     padding: 20px;
-    margin: 20px, 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -80,16 +80,39 @@ nav a:active{
     font-family: 'Onest', sans-serif;
     text-align: center;
 }
-
-.container-fluid .col-sm-12{
+/* Tablet estilos 576px */
+    .container-fluid .col-sm-12{
     height: 1000px;
-    padding: 10px, 10px;
+    padding: 10px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: flex-start;
+    }
 
-}
+/* Mobile estilos 320px */
+@media only screen and (max-width: 320px){
+    nav ul li{
+        padding: 5px;
+    }
+    body{
+        max-width: 320px;
+    }
+    .container-fluid{
+        max-width: 320px;
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .container-fluid .col{
+        max-width: 310px;
+        max-height: 550px;
+        justify-content: flex-start;
+    }   
+}  
 /* Fin Home */
 /* Tienda */
 .tienda{
